@@ -1,0 +1,91 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+:root{
+    --primary:#080708;
+    --secondary:#3e3d3d;
+    --accent:#ff6425;
+    --accent2:#35aae8;
+    --light:#ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color:var(--secondary);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding:20px;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    color:var(--light);
+    padding:5px;
+    border-bottom:2px solid var(--light);
+}
+
+.logo{
+    width:10%;
+}
+
+.title{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size:50px;
+    color:var(--light);
+    text-align:center;
+}
+
+.title-left{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size:150px;
+    color:var(--light);
+    text-align:left;
+    padding:40vh 0px 0px;
+}
+
+.home ul li{
+    color:var(--light);
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+}
+
+body{
+    background-image: url(imgs/engine-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.page{
+    background-color: var(--secondary);
+}
+
+.page p{
+    color:var(--light);
+    font-family: 'Roboto', sans-serif;
+}
+
+.home{
+    height:100vh;
+}
