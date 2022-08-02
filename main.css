@@ -15,8 +15,8 @@
 
 nav{
     display:flex;
-    justify-content: space-between;
-    background-color:var(--secondary);
+    justify-content: center;
+    background-color:transparent;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -24,6 +24,7 @@ nav{
 
 nav ul{
     display:flex;
+    align-items: space-between;
 }
 
 nav ul li{
@@ -41,10 +42,12 @@ nav ul a{
 }
 
 .logo{
-    width:10%;
+    width:25%;
+    display: block;
+    margin: 0 auto;
 }
 
-.title{
+.title-head{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight:700;
@@ -53,24 +56,25 @@ nav ul a{
     text-align:center;
 }
 
-.title-left{
+.title{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight:700;
     font-size:150px;
     color:var(--light);
-    text-align:left;
+    text-align:center;
     padding:40vh 0px 0px;
 }
 
 .home ul li{
-    color:var(--light);
+    color:var(--secondary);
     font-family: 'Roboto', sans-serif;
     font-size:15px;
+    text-align: center;
 }
 
 body{
-    background-image: url(imgs/engine-3.jpg);
+    background-image: url(imgs/engine-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,5 +91,5 @@ body{
 }
 
 .home{
-    height:100vh;
+    justify-content: top;
 }
