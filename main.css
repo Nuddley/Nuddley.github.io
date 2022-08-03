@@ -1,23 +1,27 @@
 *{
     padding:0px;
     margin:0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root{
     --primary:#080708;
     --secondary:#3e3d3d;
     --accent:#ff6425;
-    --accent2:#35aae8;
+    --accent2:#c41a1a;
     --light:#ffffff;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@300;400;700&display=swap');
 
 nav{
     display:flex;
     justify-content: center;
     background-color:transparent;
-    position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
@@ -34,7 +38,6 @@ nav ul li{
 
 nav ul a{
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-weight:400;
     color:var(--light);
     padding:5px;
@@ -42,14 +45,13 @@ nav ul a{
 }
 
 .logo{
-    width:25%;
-    display: block;
-    margin: 0 auto;
+    width:8.5%;
+    margin:25px;
+    margin-top:10px;
 }
 
 .title-head{
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-weight:700;
     font-size:50px;
     color:var(--light);
@@ -58,17 +60,23 @@ nav ul a{
 
 .title{
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-weight:700;
     font-size:150px;
     color:var(--light);
     text-align:center;
-    padding:40vh 0px 0px;
+}
+
+.home{
+    height: 100vh;
+}
+
+.title-box{
+    margin:0 auto;
+    display: block;
 }
 
 .home ul li{
-    color:var(--secondary);
-    font-family: 'Roboto', sans-serif;
+    color:var(--light);
     font-size:15px;
     text-align: center;
 }
@@ -81,15 +89,92 @@ body{
     background-attachment: fixed;
 }
 
-.page{
-    background-color: var(--secondary);
+.page-right{
+    background-image: url(imgs/red-hellcat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:120vh;
+    display: flex;
+    justify-content: right;
 }
 
-.page p{
+.page-left{
+    background-image: url(imgs/ford-race.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:120vh;
+    display: flex;
+    justify-content: left;
+}
+
+.page-left-2{
+    background-image: url(imgs/drift-balck-green.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:120vh;
+    display: flex;
+    justify-content: left;
+}
+
+.content-right{
+    margin:auto 20px;
+    width:30%;
+    color:var(--primary);
+    padding:20px;
+    background-color: var(--light);
+    border:solid var(--light) 5px;
+    border-radius: 10px;
+}
+
+.content-left{
+    margin:auto 20px;
+    width:30%;
+    color:var(--primary);
+    padding:20px;
+    background-color: var(--light);
+    border:solid var(--light) 5px;
+    border-radius: 10px;
+}
+
+.title-small{
+    color:var(--secondary);
+    font-size:50px;
+}
+
+.button{
     color:var(--light);
-    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    padding:5px;
+    margin:20px auto;
+    background-color: var(--accent2);
+    border:solid var(--accent2) 5px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
-.home{
-    justify-content: top;
+.button-2{
+    color:var(--light);
+    display: block;
+    margin:0 auto;
+    padding:0px 2px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    border:solid var(--primary) 2px;
+    border-radius: 20px;
+    text-decoration: none;
+    width:3%;
+}
+
+.arrow-down{
+    width:100%;
 }
