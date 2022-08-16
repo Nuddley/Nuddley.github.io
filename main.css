@@ -304,3 +304,74 @@ footer{
 .history-content{
     padding:20px;
 }
+
+.car-imgs{
+    display: flex;
+    justify-content: center;
+}
+
+#car-imgs-1{
+    height:100vh;
+    width:33%;
+    object-fit: cover;
+}
+
+#car-imgs-2{
+    height:100vh;
+    width:34%;
+    object-fit: cover;
+}
+
+#car-imgs-3{
+    height:100vh;
+    width:33%;
+    object-fit: cover;
+}
+
+.car-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-content-txt{
+    background-color: var(--secondary);
+    color:var(--light);
+    text-align: center;
+    width:30%;
+    padding:10px 0px;
+}
+
+.page-cars{
+    display: flex;
+}
+
+.page-cars-content{
+    background-color: var(--secondary);
+    color:var(--light);
+    padding:20px;
+    width:30%;
+}
+
+.car-imgs-a{
+    height:80vh;
+    width:70%;
+    object-fit: cover;
+}
+
+.pages-cars{
+    width:80%;
+    margin:0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 10px;
+  }
