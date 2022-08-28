@@ -22,8 +22,8 @@ nav{
     display:flex;
     justify-content: center;
     background-color:transparent;
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    top: 0;
+    width: 100%;
 }
 
 nav ul{
@@ -374,4 +374,17 @@ footer{
 ::-webkit-scrollbar-thumb {
     background: var(--secondary);
     border-radius: 10px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .object{
+    background-color: var(--secondary);
+    color:var(--light);
+    text-align: center;
+    width:30%;
+    padding:10px;
   }
